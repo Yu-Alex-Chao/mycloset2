@@ -1,0 +1,236 @@
+.text-h:hover{
+  color: #336699;
+  cursor: pointer;
+}
+
+.text-xl-db{
+  color: #ffffff;
+}
+
+.text-xl-db:hover{
+  color: #ffffff;
+}
+
+.cursor-default {
+  cursor: default;
+}
+
+.inline-button {
+  display:inline;
+}
+
+.btn-my {
+  color: #336699;
+  border-color: #336699;
+}
+
+.btn-my:hover {
+  color: #ffffff;
+  background-color: #336699;
+  border-color: #336699;
+}
+
+/*.upper-empty{
+  margin-top: 36px;
+  vertical-align: bottom;
+}*/
+.button-my {
+  font-size: 12px;
+  margin-bottom: 5px;
+  width:115px;
+  padding-top: 4px;
+  padding-bottom: 4PX;
+}
+
+#absolute-cs {
+  position: absolute;
+  right:0px;
+  top: 370px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.my-inline-list-word {
+  display: inline;
+  font-size: 16px;
+  padding-right: 27px;
+  padding-left: 27px;
+  font-weight: bold;
+  color:#336699;
+}
+
+.my-inline-list-line {
+  display: inline;
+  font-size: 16px;
+  font-family: "微软雅黑";
+}
+
+.my-ul-top {
+  margin-left: 42vw;
+  margin-right: auto;
+}
+.side-nav {
+  list-style-type:none;
+  font-size: 13px;
+  padding-left: 0px;
+}
+
+#cost {
+  color:#A0000A !important;
+  font:"Arial";
+  font-size: 18px;
+}
+/*#cost:hover {
+ cursor: pointer;
+}*/
+
+.my-p {
+  font-size: 13px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+.my-select {
+  margin-bottom: 5px;
+  font-size: 13px;
+  width: 50px;
+}
+
+#shoppingbag {
+  margin-top: 10px;
+  color: #ffffff;
+  background-color: #336699;
+  border-color: #336699;
+  display: block;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.my-hlt{
+  margin-top:15px;
+  margin-bottom: 0px;
+  margin-left: 15px;
+  font-size:14px;
+}
+
+.my-inline-list-2 {
+  list-style-type: none;
+  color: #666;
+  font-size: 13px;
+  padding-top: 8px;
+  padding-bottom: 4px;
+  padding-left: 30px;
+}
+
+.circle-bul {
+  list-style-type: circle;
+}
+
+#icon {
+  width: 60px;
+  height: 60px;
+  vertical-align:text-bottom;
+}
+
+.my-inline-icon {
+  display: inline;
+  padding-right: 5px;
+}
+
+img{
+  vertical-align:text-top;
+}
+
+#cost, .my-inline-list-word:hover {
+  cursor: pointer;
+}
+
+.my-sm-font {
+  font-size: 12px;
+  margin-top: 5px;
+  color: #666666;
+}
+
+.comment {
+  border-bottom-color: #cfcfcf;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+
+#p-nav {
+  list-style-type: none;
+  margin: 0;    
+  padding: 0;
+  overflow: hidden;
+  background-color: #f7f7f7;
+  border-color:#eee;
+  border-style:solid;
+  border-width: 1px;
+  border-bottom-color:#369;
+}
+
+#infoli, #commentli {
+  display: inline-block;
+  color: #666;
+  padding: 10px 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-decoration: none;
+  font-family: "microsoft yahei";
+  cursor: pointer;
+  font-size:14px;
+}
+
+#infoli {
+  color: #fff;
+  background-color: #369;
+}
+
+#infoli:hover {
+    color: #369;
+}
+
+#commentli:hover {
+    color: #369;
+}
+
+.clothpic-md {
+  width:30%;
+  height:width;
+  margin-top: 20px;
+  margin-left:20px;
+}
+
+#clothpic {
+  width:100%;
+}
+
+@media only screen and (max-width: 500px) {
+  .my-inline-list {
+    display: inline;
+    font-size: 10px;
+    font-family: "微软雅黑"；
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  #icon {
+    width: 25px;
+    height: 25px;
+  }
+
+  #clothpic {
+    width: 80%;
+  }
+
+  .clothpic-md {
+    width: 40%;
+    margin-left: 0px;
+  }
+}
+
+#instruc-above {
+  display: none;
+}

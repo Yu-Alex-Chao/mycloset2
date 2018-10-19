@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<!-- saved from url=(0059)http://getbootstrap.com/docs/4.0/examples/starter-template/ -->
+<html lang="en">
+  <head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="http://getbootstrap.com/favicon.ico">
+
+        <title>My Best Closet</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="./Start_files/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom styles for this template -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/w3.css">
+        <link rel="stylesheet" type="text/css" href="css/mycss.css">
+        <link href="./Start_files/starter-template.css" rel="stylesheet">
+      <style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+    .en-markup-crop-options {
+        top: 18px !important;
+        left: 50% !important;
+        margin-left: -100px !important;
+        width: 200px !important;
+        border: 2px rgba(255,255,255,.38) solid !important;
+        border-radius: 4px !important;
+    }
+
+    .en-markup-crop-options div div:first-of-type {
+        margin-left: 0px !important;
+    }
+    </style>
+
+  </head>
+
+  <body style="padding-top: 0px">
+
+    <!--top information / search-->
+    
+
+    <main role="main" class="container">
+
+    <!--instructions for the experiment-->
+      <div class = "container" id = "instruc">
+        <h2>指导语（必读！）</h2>
+        <h3>关于本次研究</h3>
+        <p>同学你好，欢迎参与本次<b>关于“网络购物行为”的研究</b>（受复旦大学本科生学术资助计划资助，曦源项目18479）。本次研究不涉及敏感问题，且数据受严格保密，仅用于本学术研究，不会做任何形式的泄露。
+        </p>
+        <p>在这个研究中你将：1. 使用一个<b>网页</b>，2. 根据网页内容填写<b>一份问卷</b></p>
+        
+        <h3>我的任务是什么？</h3>
+        <p>在浏览网页时，你的任务是想象自己正在<b style="color:red">为一位女性朋友购买一件衣服</b>。女性朋友可以是任何你认识的人。请你浏览左侧标签栏中加粗的四件衣服，并<b>从中选择一件</b>，选择颜色与尺寸后，<b>点击“加入购物车”。</b></p>
+        <p>点击加入购物车后你将被指引到一个问卷，请你<b>根据问卷描述填写相应内容。</b></p>
+        
+        <h3>我能获得什么？</h3>
+        <p>1. 研究大约<b style="color:red">5-10分钟</b>，我们将给予你<b style="color:red">10元红包答谢</b>。请在问卷中输入你的支付宝账号（或微信号），我们将转账与你。</p>
+        <p>2.  如果你希望得到研究报告反馈，请在问卷中留下邮箱，我们将在研究完成后发送报告给你。</p>
+
+        <button onclick="hideInstrucDisplayExp()">我已明白任务，点击进入正式实验</button>
+      </div>
+    <!--instructions menu-->
+      <div class = "container" style="display:none" id ="instruc-but">
+        <div class="row">
+          <div class = "col-md-2">
+            <button onclick = "openInstrucAbove()" id = "instruc-but-name" style="font-size: 14px">打开任务指导</button>
+          </div>
+          <div class="col-md-10" id = "instruc-above" style="display: none">
+            <p style="font-size: 14px">在浏览网页时，你的任务是想象自己正在为一位女性朋友购买一件衣服。女性朋友可以是任何你认识的人。请你浏览左侧标签栏中加粗的四件衣服，并从中选择一件，选择颜色与尺寸后，点击“加入购物车”。</p>
+          </div>
+          <hr>
+        </div>
+      </div>
+    <!--real website-->
+      <div class = "container" id = "exp" style="display: none">
+        <!--top navigation / cloth category-->
+        <div class = "row" style="display: inline;">
+          <ul style = "margin-top: 0px; padding-left: 0px; margin-bottom: 4px;">
+            <!--<li class = "my-inline-icon"><img src="images\icon.png" id = "icon"></li>-->
+            <li class = "my-inline-list-word" style="padding-left: 0px; color: #131313;">My closet</li>
+            <li class = "my-inline-list-line">|</li>
+            <li class = "my-inline-list-word">新品</li>
+            <li class = "my-inline-list-line">|</li>
+            <li class = "my-inline-list-word">女装</li>
+            <li class = "my-inline-list-line">|</li>
+            <li class = "my-inline-list-word">男装</li>
+            <li class = "my-inline-list-line">|</li>
+            <li class = "my-inline-list-word">孕妇装</li>
+            <li class = "my-inline-list-line">|</li>
+            <li class = "my-inline-list-word">居家装</li>
+            <li class = "my-inline-list-line">|</li>
+            <li class = "my-inline-list-word">女孩</li>
+            <li class = "my-inline-list-line">|</li>
+            <li class = "my-inline-list-word">男孩</li>
+            <li class = "my-inline-list-line">|</li>
+            <li class = "my-inline-list-word">运动装</li>
+          </ul>
+
+        </div>
+        <!--定位-->
+        <div class = "row" style="margin-bottom: 10px; font-size: 14px"><b>首页</b> > <b>女装</b> > <b>精选系列</b> > <b>+X系列</b></div>
+        <div class = "row">
+        <!--side navigation-->
+          <div class = "col-md-2" style="padding-left: 0px">
+            <ul class = "side-nav">
+              <li style="padding-bottom: 10px; font-size: 14px"><b>+X系列</b></li>
+              <li></li>
+              <li class = "text-h" style="padding-left: 10px" id = "ItemA" onclick = "changeToItemA()"><b>外套</b></li>
+              <li style="padding-left: 10px">卫衣</li>
+              <li class = "text-h" style="padding-left: 10px" id = "ItemB" onclick = "changeToItemB()"><b>针织衫/毛衣</b></li>
+              <li class = "text-h" style="padding-left: 10px" id = "ItemD" onclick = "changeToItemD()"><b>衬衫/上衣</b></li>
+              <li style="padding-left: 10px">T恤/背心</li>
+              <li style="padding-left: 10px">裙装</li>
+              <li style="padding-left: 10px">牛仔裤</li>
+              <li style="padding-left: 10px">休闲裤</li>
+              <li class = "text-h" style="padding-left: 10px" id = "ItemC" onclick = "changeToItemC()"><b>Fit运动系列</b></li>
+              <li style="padding-left: 10px">Home居家系列</li>
+            </ul>
+          </div>
+
+          <!--picture -->
+          <div class = "col-md-5">
+
+            <img src="images\itemA1.jpg" id = "clothpic">
+            <!--
+            <img src = "images\ItemAL.jpg" class = "clothpic-sm" onclick="changeMainPic1()" id = "clothpic-sm-1">
+            <img src = "images\ItemA.jpg" class = "clothpic-sm" onclick="changeMainPic2()" id = "clothpic-sm-2"> -->
+
+          </div>
+
+          <!--cloth information-->
+          <div class = "col-md-5">
+            <h2 id = 'name'>经典舒适直筒牛仔夹克</h2>
+
+            <p class = my-p>现价：<span id = "cost">￥499.00</span></p>
+            <p class="my-p" id = "nsold">销量：629</p>
+            <p class="my-p" id = "ncom">评价：4.83</p>
+
+            <!--尺码-->
+            <p class="my-p">尺码：请选择</p>
+
+            <button class = "w3-button w3-white w3-border button-my" id="a" onclick = "myFunctiona()">155/78A(XXXS)</button>
+            <button class = "w3-button w3-white w3-border button-my" id="b" onclick = "myFunctionb()">160/80A(XXS)</button>
+            <button class = "w3-button w3-white w3-border button-my" id="c" onclick = "myFunctionc()">165/84A(XS)</button>
+            <button class = "w3-button w3-white w3-border button-my" id="d" onclick = "myFunctiond()">165/88A(S)</button>
+            <button class = "w3-button w3-white w3-border button-my" id="e" onclick = "myFunctione()">170/96A(M)</button>
+            <button class = "w3-button w3-white w3-border button-my" id="f" onclick = "myFunctionf()">170/100A(L)</button>
+
+            <!--颜色-->
+            <p class="my-p" style="margin-top: 5px">颜色：请选择</p>
+            <button class = "w3-button w3-white w3-border button-my" id="A" onclick = "myFunctionA()">深靛蓝色</button>
+            <button class = "w3-button w3-white w3-border button-my" id="B" onclick = "myFunctionB()" style="display: none"></button>
+            <button class = "w3-button w3-white w3-border button-my" id="C" onclick = "myFunctionC()" style="display: none"></button>
+            <button class = "w3-button w3-white w3-border button-my" id="D" onclick = "myFunctionD()" style="display: none"></button>
+            <button class = "w3-button w3-white w3-border button-my" id="E" onclick = "myFunctionE()" style="display: none"></button>
+            <button class = "w3-button w3-white w3-border button-my" id="F" onclick = "myFunctionF()" style="display: none"></button>
+
+            <!--数量-->
+            <p class = "my-p" style="margin-top: 5px">数量：</p>
+            <select class = "my-select">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+            <!--加入购物车-->
+            <button  onclick="location.href='https://www.wjx.cn/jq/28321943.aspx'" class = "w3-btn" id ="shoppingbag"> 加入购物车</button>
+          </div>
+
+        </div>
+        <div class="row" style="margin-top: 40px">
+          <div class = "col-md-2"></div>
+          <div class = "col-md-10">
+              <div class = "tab">
+                    <ul id = "p-nav"> 
+                        <li onclick = "changeToInfo()" id = "infoli"><a>产品信息</a></li>
+                        <li onclick = "changeToComm()" id = "commentli"><a>用户评价</a></li>
+                    </ul>
+              </div>
+              <div class = "tab-con">
+                <!-- product details-->
+                <div id = "pro-info" style="display:block">
+                    <!--changing images-->
+                    
+                    
+                    <img src="images\itemA1.jpg" class = "clothpic-md" id = "clothpic-md-1">
+                    <img src="images\itemA2.jpg" class = "clothpic-md" id = "clothpic-md-2">
+                    
+                    <!--product description-->
+                    <p class = "my-hlt">产品描述</p>
+                    <ul id = 'dscrp' class = "my-inline-list-2 circle-bul">
+                      <li id = 'dscrp1'>纽扣开襟</li>
+                      <li id = 'dscrp2'>胸前两侧纽扣翻盖贴袋，正面下方两侧口袋</li>
+                      <li id = 'dscrp3'>水洗牛仔，经轻微褪色处理</li>
+                      <li id = 'dscrp4'>长袖，纽扣袖口</li>
+                    </ul>
+                    <p class = "my-hlt">产品参数</p>
+                    <ul id = 'info' class = "my-inline-list-2 circle-bul">
+                      <li>【商品材质】<span id = 'info1'>棉99%，氨纶1%</span></li>
+                      <li>【洗涤说明】<span id = 'info2'>请与同类色衣物洗涤，干燥</span></li>
+                    </ul>
+                </div>
+                <!-- user comment-->
+                <div id = "user-comment" style="display:none">
+                  <p class="my-inline-list-2">(无)</p>
+                  <p></p>
+                  <p></p>
+                  <p></p>
+                </div>
+              </div>
+          </div>
+          </div>
+        </div>
+      </div>
+
+    </main><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+ 
+    <script src="js/changeColor.js"></script>
+    <script src="js/changeItem.js"></script>
+
+</body></html>
